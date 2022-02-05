@@ -4,6 +4,7 @@ package com.greatlearning.designpatter1;
 import java.sql.SQLException;
 import java.util.List;
 
+
 public interface EmployeeDao {
 
     public int add(Employee emp)

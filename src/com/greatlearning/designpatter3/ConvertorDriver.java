@@ -7,7 +7,7 @@ public class ConvertorDriver {
         Convertor convert= CurrencyFactory.convertToINR(convertFrom); // creating the proper object as per Factory Design
 
         if (convertFrom.equalsIgnoreCase("Dollar"))
-            System.out.println("Dollar to INR --> Rs."+convert.convertToINR(amount)); // calling US specific impl
+            System.out.println("Dollar to INR --> Rs."+convert.convertToINR(amount)); //calling US specific impl
         else
             System.out.println("GBP to INR --> Rs."+convert.convertToINR(amount)); //calling GBp specific Impl
 

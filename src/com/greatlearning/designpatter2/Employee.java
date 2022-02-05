@@ -43,7 +43,7 @@ public class Employee {
             this.balance=balance;
 
         }
-//Design Pattern
+        //Design Pattern
         public EmployeeBuilder setAtm_transactions(int atm_transactions){
             this.atm_transactions=atm_transactions;
             return this;

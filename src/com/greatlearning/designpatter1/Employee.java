@@ -6,12 +6,15 @@ public class Employee {
     String empName;
     String empAddress;
 
-    public Employee() {}
+
 
     public Employee(String empName, String empAddress)
     {
         this.empName = empName;
         this.empAddress = empAddress;
+    }
+
+    public Employee() {
     }
 
     public int getEmpId()

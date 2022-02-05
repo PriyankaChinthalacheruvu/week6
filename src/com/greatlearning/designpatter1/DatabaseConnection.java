@@ -6,18 +6,20 @@ import java.sql.SQLException;
 
 public class DatabaseConnection {
 
-    private static Connection con = null;
+    //private static Connection con ;
+    private static Connection con;
 
     static
     {
-        String url = "jdbc:mysql://localhost:3306/students";
+        String url = "jdbc:mysql://localhost:3306/database";
         String user = "root";
-        String pass = "Tonystark_2205";
+        String pass = "root";
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection(url, user, pass);
+            //Class.forName("com.mysql.jdbc.Driver");
+             con = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/database", "root", "root");
         }
-        catch (ClassNotFoundException | SQLException e) {
+        catch ( SQLException e) {
             e.printStackTrace();
         }
     }
